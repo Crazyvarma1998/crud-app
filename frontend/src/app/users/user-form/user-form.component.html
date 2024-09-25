@@ -1,0 +1,27 @@
+<div>
+    <h1 style="text-align: center;">Craete Users</h1>
+    <div class="row">
+        <label for="">Name</label>
+        <input type="text" name="" id="" [(ngModel)]="name">
+    </div>
+    <div class="row">
+        <label for="">Email</label>
+        <input type="email" name="" id="" [(ngModel)]="email">
+    </div>
+    <div class="row">
+        <label for="">Age</label>
+        <input type="number" name="" id="" [(ngModel)]="age" maxlength="3">
+    </div>
+    <div class="row">
+        <label for="">Address</label>
+        <input type="text" name="" id="" [(ngModel)]="address">
+    </div>
+    <div class="row">
+        <label for="" >Password</label>
+        <input type="password" name="" id="" [(ngModel)]="password" maxlength="11">
+    </div>
+    <div style="text-align: center;" (click)="submit()">
+        <button  mat-raised-button color="primary">Submit</button>
+    </div>
+
+</div>

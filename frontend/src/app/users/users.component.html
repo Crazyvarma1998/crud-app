@@ -1,0 +1,32 @@
+<div class="py-5" style="text-align: end;padding: 10px;">
+    <button mat-raised-button color="primary" style="text-align: end;" (click)="user()">Add User</button>
+</div>
+<table class="w-full" style="padding: 20px;">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Age</td>
+            <td>Address</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody > 
+        @for (result of result; track $index){
+        <tr>
+            <td>{{result.name}}</td>
+            <td>{{result.email}}</td>
+
+            <td>{{result.age}}</td>
+
+            <td>{{result.address}}</td>
+            <td style="gap: 10px;">
+                <!-- <button  mat-raised-button color="primary" style="margin-right: 20px;">Edit</button> -->
+                <button  mat-raised-button color="Danger" (click)="deleteUser(result._id)">Del</button>
+
+            </td>
+
+        </tr>
+    }
+    </tbody>
+</table>
